@@ -1,7 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f4f4f4;
+        }
+
+        header{
+            background:#1e1e1e;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            padding:30px 0;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+        }
+
+        .content{
+            padding:15px;
+        }
+
+        h2{
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        .genre{
+            color:#666;
+            margin-bottom:10px;
+        }
+
+        .rating{
+            color:gold;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎬 My Favorite Movies</h1>
+    <p>Daftar Film Favorit Saya</p>
+</header>
+
 <div class="container">
 
     <div class="card">
-        <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg">
         <div class="content">
             <h2>Interstellar</h2>
             <p class="genre">Genre : Sci-Fi</p>
@@ -10,7 +90,7 @@
     </div>
 
     <div class="card">
-        <img src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg">
         <div class="content">
             <h2>Avengers Endgame</h2>
             <p class="genre">Genre : Action</p>
@@ -19,7 +99,7 @@
     </div>
 
     <div class="card">
-        <img src="https://image.tmdb.org/t/p/w500/8I37NtDffNV7AZlDa7uDvvqhovU.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Inception_2010_Theatrical_Poster.jpg">
         <div class="content">
             <h2>Inception</h2>
             <p class="genre">Genre : Sci-Fi</p>
@@ -28,7 +108,7 @@
     </div>
 
     <div class="card">
-        <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Batman_%282022_film_poster%29.jpg">
         <div class="content">
             <h2>The Batman</h2>
             <p class="genre">Genre : Action</p>
@@ -37,7 +117,7 @@
     </div>
 
     <div class="card">
-        <img src="https://image.tmdb.org/t/p/w500/5weKu49pzJCt06OPpjvT80efnQj.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg">
         <div class="content">
             <h2>Spider-Man No Way Home</h2>
             <p class="genre">Genre : Adventure</p>
@@ -46,3 +126,6 @@
     </div>
 
 </div>
+
+</body>
+</html>
